@@ -1,7 +1,7 @@
 name: Cypress QA Assignment e2e tests
 on: 
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 1 * * *'
 
 jobs:
   cypress-run:
