@@ -1,5 +1,8 @@
 name: Cypress QA Assignment e2e tests
-on: push
+on: 
+  schedule:
+    - cron: '0 1 * * *'
+
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
