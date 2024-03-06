@@ -27,7 +27,7 @@ let data;
   })
 
   it('Varify forum list', function(){
-    homePage.getSearchedFourms().eq(1).within(()=>{
+    homePage.getSearchedFourms().eq(2).within(()=>{
       homePage.getFourmListCount().should('have.length.at.least', 6)
        homePage.getFourmListElement().each(($li, i, $list)=>{
          cy.wrap($li).should('have.attr', 'href').and('include', data.DomainName);
